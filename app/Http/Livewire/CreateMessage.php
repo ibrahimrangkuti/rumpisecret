@@ -24,7 +24,7 @@ class CreateMessage extends Component
         $messages = Message::where('user_link', $this->user->link)->get();
 
         $this->validate([
-            'message' => 'required|string|min:3'
+            'message' => 'required|min:3'
         ]);
 
         Message::create([

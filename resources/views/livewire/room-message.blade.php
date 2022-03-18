@@ -1,4 +1,4 @@
-<div class="mt-5">
+<div class="mt-5" wire:poll>
     <div class="mb-3">
         <h4>Pesan ({{ $messages->count() }})</h4>
     </div>
